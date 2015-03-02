@@ -14,8 +14,16 @@ var onSignupComplete = function(error) {
   }
 };
 
+
+
+/*
+TODO: Add server side email validation
+*/
+
+
+
 function signup(formObj) {
-    // Store emails to firebase
+// Store emails to firebase
     var myFirebaseRef = new Firebase("https://signuptemplate.firebaseio.com/prelaunch");
     myFirebaseRef.push({
       email: formObj.email.value,
